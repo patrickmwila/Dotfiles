@@ -1,12 +1,9 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#spawn pfetch when terminal start
+#pfetch
+
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/home/patrick/.local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/patrick/.oh-my-zsh"
@@ -21,7 +18,7 @@ ZSH_THEME="gianu"
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" "gianu")
+# ZSH_THEME_RANDOM_CANDIDATES=("agnoster" "simple" "gianu" "apple")
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -143,14 +140,18 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
-alias pyd='cd ~/Documents/programming-workspace/projects/python'
-alias jd='cd ~/Documents/programming-workspace/projects/java'
+alias pyd='~/Github/startingOutWithProgramming/projects/python'
+alias jd='~/Documents/coding/projects/java'
+alias jdg='~/Github/startingOutWithProgramming/projects/java/startingOutWithJava'
+alias net='nmtui'
+alias sch='~/School/bs.icts.ed/2020-2021/courses/'
 
 # clear screen
-alias cls='clear'
+alias clear='clear; figlet "HELLO WORLD"'
 
-# launch jupyter-notebook
+# launch programs
 alias jn='jupyter-notebook'
+alias rt='rtorrent'
 
 # pacman and yay
 alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
@@ -223,5 +224,3 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
