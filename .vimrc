@@ -11,7 +11,7 @@ set nowrap
 set smartcase
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir=~/.vim/undodir "make sure to create dir --- mkdir undodir in ~/.vim
 set undofile
 set incsearch
 set laststatus=2
@@ -26,12 +26,13 @@ Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
+set encoding=utf-8
 set laststatus=2
 set t_Co=256
 
-"set termguicolors     " enable true colors support
+set termguicolors     " enable true colors support
 "let ayucolor="light"  " for light version of theme
 "let ayucolor="mirage" " for mirage version of theme
-"let ayucolor="dark"   " for dark version of theme
-"colorscheme ayu
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 
