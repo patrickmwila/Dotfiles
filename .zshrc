@@ -3,7 +3,7 @@
 
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:~/.local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/.local/bin:~/.local/scripts:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/patrick/.oh-my-zsh"
@@ -12,13 +12,14 @@ export ZSH="/home/patrick/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
 ZSH_THEME="gianu"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=("agnoster" "simple" "gianu" "apple")
+# ZSH_THEME_RANDOM_CANDIDATES=("sorin agnoster" "simple" "gianu" "apple")
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -140,18 +141,35 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
-alias pyd='~/Github/startingOutWithProgramming/projects/python'
-alias jd='~/Documents/coding/projects/java'
-alias jdg='~/Github/startingOutWithProgramming/projects/java/startingOutWithJava'
+alias pyd='~/Github/pythonForDataScience'
+alias pyds='~/Github/pythonScripts'
+alias jdi='~/Github/ict2010'
+alias jds='~/Github/startingOutWithJava'
 alias net='nmtui'
 alias sch='~/School/bs.icts.ed/2020-2021/courses/'
 
+# dwm maintenance
+# when you create a branch to the following. eg when we creat:
+# git branch config
+# same applies to patches give them a branch name and carry out the patches as outlined below
+
+alias cdwm='make clean && rm -f config.h && git reset --hard origin/master' # clean master branch before making changes
+alias gccdwm='git checkout config' # switch to config branch and make changes to config.def.h 
+alias gadwm='git add config.def.h' # add your changes
+alias gcdwm='git commit -m config' # commit your changes
+alias godwm='git checkout master'  # switch to master branch
+alias gmdwm='git merge config -m config' # merge config files
+alias mdwm='sudo make && sudo make clean install' # make clean install
+# restart dwm
+
 # clear screen
-alias clear='clear; figlet "HELLO WORLD"'
+# alias clear='clear; pfetch'
 
 # launch programs
 alias jn='jupyter-notebook'
+alias jl='jupyter lab'
 alias rt='rtorrent'
+alias j='java'
 
 # pacman and yay
 alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
@@ -161,7 +179,7 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 alias fmirror="sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist"
 
 # changing "ls" to "exa"
-alias ll='exa -al --color=always --group-directories-first' # my preferred listing
+alias ll='exa -la --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
 alias ls='exa -l --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
@@ -224,3 +242,4 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 
+export PATH=$HOME/.config/nvcode/utils/bin:$PATH
