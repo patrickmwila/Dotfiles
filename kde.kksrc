@@ -10,20 +10,20 @@ Switch to Next Keyboard Layout=
 AboutApp=
 AboutKDE=
 Activate Next Tab=Ctrl+]; Ctrl+PgDown
-Activate Previous Tab=Ctrl+[; Ctrl+PgUp
+Activate Previous Tab=Ctrl+PgUp; Ctrl+[
 ActualSize=Ctrl+0
 AddBookmark=Ctrl+B
-Back=Back; Alt+Left
+Back=Alt+Left; Back
 BackwardWord=Ctrl+Left
 Begin=Ctrl+Home
 BeginningOfLine=Home
 Clear=
-Close=Ctrl+W; Ctrl+Esc
+Close=Ctrl+Esc; Ctrl+W
 ConfigureNotifications=
 ConfigureToolbars=
-Copy=Ctrl+Ins; Ctrl+C
+Copy=Ctrl+C; Ctrl+Ins
 CreateFolder=F10
-Cut=Shift+Del; Ctrl+X
+Cut=Ctrl+X; Shift+Del
 DeleteFile=Shift+Del
 DeleteWordBack=Ctrl+Backspace
 DeleteWordForward=Ctrl+Del
@@ -65,7 +65,7 @@ PrintPreview=
 Prior=PgUp
 Quit=Ctrl+Q
 Redo=Ctrl+Shift+Z
-Reload=F5; Refresh
+Reload=Refresh; F5
 RenameFile=F2
 Replace=Ctrl+R
 ReportBug=
@@ -89,14 +89,8 @@ Undo=Ctrl+Z
 Up=Alt+Up
 WhatsThis=Shift+F1
 Zoom=
-ZoomIn=Ctrl++; Ctrl+=
+ZoomIn=Ctrl+=; Ctrl++
 ZoomOut=Ctrl+-
-
-[alacritty.desktop][Global Shortcuts]
-_launch=Meta+A
-
-[eclipse.desktop][Global Shortcuts]
-_launch=Meta+Shift+E
 
 [google-chrome.desktop][Global Shortcuts]
 _launch=Meta+C
@@ -124,7 +118,7 @@ mute=Volume Mute
 
 [krunner.desktop][Global Shortcuts]
 RunClipboard=Alt+Shift+F2
-_launch=Alt+F2; Alt+Space; Search; Meta+P
+_launch=Alt+F2; Search; Alt+Space; Meta+P
 
 [ksmserver][Global Shortcuts]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
@@ -194,8 +188,8 @@ Switch One Desktop Down=Meta+Ctrl+Down
 Switch One Desktop Up=Meta+Ctrl+Up
 Switch One Desktop to the Left=Meta+Ctrl+Left
 Switch One Desktop to the Right=
-Switch Window Down=Meta+J; Meta+Alt+Down
-Switch Window Left=Meta+K; Meta+Alt+Left
+Switch Window Down=Meta+Alt+Down; Meta+J
+Switch Window Left=Meta+Alt+Left; Meta+K
 Switch Window Right=Meta+Alt+Right
 Switch Window Up=Meta+Alt+Up
 Switch to Desktop 1=Meta+1
@@ -256,7 +250,7 @@ Window Lower=
 Window Maximize=Meta+PgUp
 Window Maximize Horizontal=
 Window Maximize Vertical=
-Window Minimize=Meta+PgDown
+Window Minimize=Meta+PgDown; Meta+,
 Window Move=
 Window No Border=
 Window On All Desktops=
@@ -390,15 +384,12 @@ switch to previous activity=
 toggle do not disturb=
 
 [systemsettings.desktop][Global Shortcuts]
-_launch=Tools
-kcm_kscreen=Meta+S
-kcm_lookandfeel=
-kcm_users=
+_launch=Tools; Meta+S
+kcm-kscreen=
+kcm-lookandfeel=
+kcm-users=
 powerdevilprofilesconfig=
 screenlocker=
-
-[terminator.desktop][Global Shortcuts]
-_launch=
 
 [yakuake][Global Shortcuts]
 toggle-window-state=F12
