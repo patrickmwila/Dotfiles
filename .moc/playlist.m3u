@@ -1,4 +1,8 @@
 #EXTM3U
-#MOCSERIAL: -1
-#EXTINF:232,/home/patrick/Music/farcry/we-will-rise-again-into-the-flames.mp3
-/home/patrick/Music/farcry/we-will-rise-again-into-the-flames.mp3
+#MOCSERIAL: 768
+#EXTINF:170,14 Justin Bieber - Confirmation (Changes)
+/home/patrick/Downloads/torrents/completed/jb/14._confirmation.mp3
+#EXTINF:168,2 Justin Bieber - Habitual (Changes)
+/home/patrick/Downloads/torrents/completed/jb/02._habitual.mp3
+#EXTINF:219,7 Justin Bieber,Post Malone,Clever - Forever (Changes)
+/home/patrick/Downloads/torrents/completed/jb/07._forever.mp3
