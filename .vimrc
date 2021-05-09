@@ -24,7 +24,7 @@ set t_Co=256
 call plug#begin('~/.vim/plugged')
 
 Plug 'uiiaoo/java-syntax.vim'
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 "Plug 'mbbill/undodir'
 Plug 'powerline/powerline'
 Plug 'ayu-theme/ayu-vim'
@@ -33,13 +33,14 @@ Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
-set termguicolors     " enable true colors support
+"set termguicolors     " enable true colors support
 "let ayucolor="light"  " for light version of theme
 "let ayucolor="mirage" " for mirage version of theme
-let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
+"let ayucolor="dark"   " for dark version of theme
+"colorscheme ayu
 "colorscheme gruvbox
 "set background=dark
+"let g:gruvbox_contrast_dark = 'hard'
 
 " ### Open when no files were speficied on vim launch
 " autocmd StdinReadPre * let s:std_in=1
