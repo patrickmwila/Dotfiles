@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # debianBuster BSPWM
-sudo apt install bspwm sxhkd nitrogen polybar dmenu firefox-esr pcmanfm materia-gtk-theme papirus-icon-theme terminator
+sudo apt install bspwm sxhkd nitrogen polybar 
 
 # install other applicaions
-sudo apt install figlet neofetch grub-customizer ffmpeg vifm rtorrent moc ark vim git curl wget mpv ttf-ubuntu-font-family -y
+sudo apt install figlet neofetch grub-customizer ffmpeg vifm rtorrent -y
 
 # install multi-media codecs
 sudo apt install ttf-mscorefonts-installer libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
