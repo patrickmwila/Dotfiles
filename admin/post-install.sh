@@ -9,6 +9,10 @@ sudo apt install figlet neofetch grub-customizer ffmpeg vifm rtorrent -y
 # install multi-media codecs
 sudo apt install ttf-mscorefonts-installer libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
 
+# setup bluetooth protocal 
+# Arch: pacman -S pulseaudio-bluetooth
+sudo apt install pulseaudio-module-bluetooth -y  # kde-debian
+
 # install libreoffice
 figlet "Install libreoffice"
 sudo apt install libreoffice -y
@@ -31,3 +35,5 @@ sudo apt install texlive-xetex pandoc perl-tk -y
 
 # finish
 figlet "#ROOT DONE"
+
+## /home/adminroot/.mozilla/firefox/51v3q7xc.default-esr/chrome/img/ ---> path for your firefox background
