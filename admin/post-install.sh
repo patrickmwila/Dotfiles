@@ -3,6 +3,9 @@
 # debianBuster BSPWM
 sudo apt install bspwm sxhkd nitrogen polybar 
 
+# kali...
+sudo apt-get install linux-headers-$(uname -r)
+
 # install other applicaions
 sudo apt install figlet neofetch grub-customizer ffmpeg vifm rtorrent -y
 
