@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # debianBuster BSPWM
-sudo apt install bspwm sxhkd nitrogen polybar 
+sudo apt install bspwm sxhkd nitrogen polybar lxappearance rofi -y
 
 # kali...
-sudo apt-get install linux-headers-$(uname -r)
+# sudo apt-get install linux-headers-$(uname -r)
 
 # install other applicaions
 sudo apt install figlet neofetch grub-customizer ffmpeg vifm rtorrent -y
