@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # debianBuster BSPWM
-sudo apt install bspwm sxhkd nitrogen polybar lxappearance rofi -y
+sudo apt install bspwm sxhkd nitrogen polybar lxappearance rofi compton -y
 
 # kali...
 # sudo apt-get install linux-headers-$(uname -r)
