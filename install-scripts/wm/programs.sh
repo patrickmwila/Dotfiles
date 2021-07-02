@@ -28,4 +28,7 @@ sudo apt install evince
 figlet "install other utils"
 sudo apt install screenfetch htop cmatrix thunar 
 
+figlet "remember to install jdk"
+figlet "exec apt-cache search jdk & install the latest version"
+
 figlet "Blastoff!"
