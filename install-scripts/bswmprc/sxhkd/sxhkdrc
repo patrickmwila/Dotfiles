@@ -1,14 +1,13 @@
-#
 # wm independent hotkeys
 #
 
 # terminal emulator
 super + Return
-	konsole
+	terminator
 
 # program launcher
 super + p
-	dmenu_run
+	rofi -show run
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -21,6 +20,10 @@ super + Escape
 # quit bspwm normally
 super + shift + q
 	bspc quit
+
+# reload bspwm
+super + q
+	bspc wm -r 
 
 # close and kill application
 super + x
@@ -127,10 +130,3 @@ XF86AudioRaiseVolume
 	amixer set Master 5%+
 XF86AudioMute
         amixer set Master toggle
-
-# brightness control
-# XF86MonBrightnessDown
-#	xbacklight -dec 5
-# XF86MonBrightnessUp
-#	xbacklight -inc 5
-
