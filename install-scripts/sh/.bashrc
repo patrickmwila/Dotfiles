@@ -142,4 +142,4 @@ ex ()
 
 
 # set up path's
-export PATH="/home/adminroot/.local/bin:$PATH"
+export PATH="/home/patrick/.local/bin:$PATH"
