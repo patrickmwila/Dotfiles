@@ -2,7 +2,8 @@
 # EDIT sources.list and then continue
 
 # install plasma desktop
-sudo apt install kde-plasma-desktop plasma-nm -y
+# sudo apt install kde-plasma-desktop plasma-nm -y
+sudo pacman -S kde-plasma-desktop plasma-nm
 
 # change shell
 # figlet "#TO ZSH"
