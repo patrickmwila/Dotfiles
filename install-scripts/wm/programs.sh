@@ -1,7 +1,7 @@
 #!/bin/bash
 
-figlet "install lxsession"
-sudo apt install lxsession tint2
+#figlet "install lxsession"
+#sudo apt install lxsession tint2
 
 figlet "setup up multi-media codecs"                                            
 sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi ffmpeg mpv
@@ -25,8 +25,8 @@ figlet "install libreoffice"
 sudo apt install libreoffice ttf-mscorefonts-installer
 sudo apt-get install libreoffice-style-tango libreoffice-gtk3
 
-figlet "install pdf-reader"
-sudo apt install evince
+#figlet "install pdf-reader"
+#sudo apt install evince
 
 figlet "install other utils"
 sudo apt install screenfetch htop cmatrix

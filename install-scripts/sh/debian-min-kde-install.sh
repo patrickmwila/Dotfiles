@@ -3,9 +3,9 @@
 
 # install plasma desktop
 # sudo apt install kde-plasma-desktop plasma-nm -y
-sudo pacman -S kde-plasma-desktop plasma-nm
+# sudo pacman -S kde-plasma-desktop plasma-nm
 
 # change shell
 # figlet "#TO ZSH"
 # sudo apt install zsh -y
-#sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
