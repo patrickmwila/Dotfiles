@@ -14,16 +14,15 @@ figlet "install youtube-dl"
 pip3 install youtube-dl
 pip3 install --upgrade youtube-dl
 
-figlet "install jupyter-notebook"
-pip3 install jupyter-notebook
+#figlet "install jupyter-notebook"
 python3 -m pip install --upgrade jupyter
 
-pip3 install nbconvert
-sudo apt install texlive-xetex pandoc perl-tk
+#pip3 install nbconvert
+#sudo apt install texlive-xetex pandoc perl-tk
 
-figlet "install libreoffice"
-sudo apt install libreoffice ttf-mscorefonts-installer
-sudo apt-get install libreoffice-style-tango libreoffice-gtk3
+#figlet "install libreoffice"
+#sudo apt install libreoffice ttf-mscorefonts-installer
+#sudo apt-get install libreoffice-gtk3
 
 #figlet "install pdf-reader"
 #sudo apt install evince
@@ -31,7 +30,7 @@ sudo apt-get install libreoffice-style-tango libreoffice-gtk3
 figlet "install other utils"
 sudo apt install screenfetch htop cmatrix
 
-figlet "remember to install jdk"
-figlet "exec apt-cache search jdk & install the latest version"
+#figlet "remember to install jdk"
+#figlet "exec apt-cache search jdk & install the latest version"
 
 figlet "Blastoff!"

@@ -1,6 +1,5 @@
 "my preferred vim settings
 syntax on 
-
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -21,12 +20,11 @@ set encoding=utf-8
 set laststatus=2
 set t_Co=256
 set cc=80
+"set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/  
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'uiiaoo/java-syntax.vim'
-"Plug 'valloric/youcompleteme'
-"Plug 'mbbill/undodir'
 Plug 'powerline/powerline'
 Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
@@ -40,16 +38,16 @@ call plug#end()
 """""""colorschemes"""""""
 "colorscheme base16-default-dark
 "colorscheme base16-3024
-colorscheme base16-black-metal-bathory
+"colorscheme base16-black-metal-bathory
 
-"set background=dark
-"colorscheme PaperColor
-"let g:airline_theme='papercolor'
+set background=dark
+colorscheme PaperColor
+let g:airline_theme='papercolor'
 
 "let g:lightline = { 'colorscheme': 'PaperColor' }
 
-set background=dark
-let g:gruvbox_contrast_dark = 'hard'
+"set background=dark
+"let g:gruvbox_contrast_dark = 'hard'
 "colorscheme gruvbox
 
 set termguicolors     " enable true colors support
@@ -82,3 +80,5 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map nn gT
+highlight Comment cterm=italic
+"highlight ColorColumn ctermbg=0 guibg=darkgrey

@@ -1,4 +1,5 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
+
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -56,8 +57,11 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+   PS1='\033[01;32m\](admin)\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+   # PS1='(admin):\w$ '
+   # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -88,15 +92,6 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -142,3 +137,10 @@ ex ()
 
 # set up path's
 export PATH="/home/patrick/.local/bin:$PATH"
+
+# Better font rendering in java
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+
+# Set GTK LookAndFeel for java apps
+# export _JAVA_OPTIONS='swing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+# export _JAVA_OPTIONS='swing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
