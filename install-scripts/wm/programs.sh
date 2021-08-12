@@ -3,8 +3,8 @@
 #figlet "install lxsession"
 #sudo apt install lxsession tint2
 
-figlet "setup up multi-media codecs"                                            
-sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi ffmpeg mpv
+#figlet "setup up multi-media codecs"                                            
+#sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi ffmpeg mpv
 
 figlet "setup up python3-pip"
 sudo apt install python3-pip 
@@ -15,7 +15,7 @@ pip3 install youtube-dl
 pip3 install --upgrade youtube-dl
 
 #figlet "install jupyter-notebook"
-python3 -m pip install --upgrade jupyter
+#python3 -m pip install --upgrade jupyter
 
 #pip3 install nbconvert
 #sudo apt install texlive-xetex pandoc perl-tk

@@ -1,12 +1,10 @@
 #!/bin/sh
-
 $HOME/.config/polybar/launch.sh
 
+# autostart
 sxhkd &
-setxkbmap -option caps:escape &
-setxkbmap gb &
 nitrogen --restore &
-compton &
+compton -f &
 
 bspc monitor -d I II III IV V
 
@@ -17,12 +15,16 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+bspc rule -a Xfce4-terminal desktop='^1' state=floating follow=on
+bspc rule -a mpv desktop='^4' state=floating follow=on
 bspc rule -a Pcmanfm desktop='^3' state=floating follow=on
 bspc rule -a Firefox-esr desktop='^2' follow=on
-bspc rule -a mplayer2 state=floating follow=on
-bspc rule -a Evince state=floating follow=on
-bspc rule -a mpv state=floating follow=on
+bspc rule -a ffplay desktop='^4' follow=on
+#bspc rule -a ffplay desktop='^4' state=floating follow=on
+bspc rule -a mplayer desktop='^4' state=floating follow=on
+bspc rule -a Evince desktop='^5' state=floating follow=on
 bspc rule -a Nitrogen state=floating desktop='^5' follow=on
+bspc rule -a Pavucontrol desktop='^5' state=floating follow=on
 
 # set theme
 bspc config normal_border_color "#44475a"

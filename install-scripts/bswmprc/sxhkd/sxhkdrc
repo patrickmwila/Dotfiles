@@ -1,9 +1,8 @@
 # wm independent hotkeys
 #
-
 # terminal emulator
 super + Return
-	konsole
+	xfce4-terminal
 
 # program launcher
 super + p
@@ -77,6 +76,7 @@ super + {_,shift + }c
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
+
 # focus the last node/desktop
 super + {grave,Tab}
 	bspc {node,desktop} -f last
@@ -130,7 +130,21 @@ super + {Left,Down,Up,Right}
 # volume control
 XF86AudioLowerVolume
 	amixer set Master 5%-
+
 XF86AudioRaiseVolume
 	amixer set Master 5%+
 XF86AudioMute
-        amixer set Master toggle
+    amixer set Master toggle
+
+# mpd media control
+XF86AudioStop
+	mpc stop
+
+XF86AudioPlay
+	mpc toggle
+
+XF86AudioPrev
+	mpc prev
+
+XF86AudioNext
+	mpc next
