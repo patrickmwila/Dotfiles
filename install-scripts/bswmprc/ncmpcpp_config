@@ -1,0 +1,4 @@
+# ncmcpp config
+mkdir ~/.mpd ~/.ncmcpp
+mkdir ~/.config/mpd
+

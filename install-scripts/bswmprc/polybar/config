@@ -26,7 +26,7 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 1
+line-size = 2
 line-color = #00564d
 
 border-size = 0
@@ -40,7 +40,6 @@ module-margin-left = 1
 module-margin-right = 1
 
 font-0 = Roboto:bold:style=Regular:pixelsize=11;2
-# font-1 = Font Awesome 5 Brands Regular:style=Regular:pixelsize=12;2
 font-1 = unifont:fontformat=truetype:size=14:antialias=false;2
 font-2 = siji:style=Regular:pixelsize=24;2
 font-3 = Font Awesome 5 Free:pixelsize=12;2
@@ -103,17 +102,16 @@ label-empty-padding = 2
 
 ; Separator in between workspaces
 label-separator = |
-ws-icon-0 = I;
-;ws-icon-1 = II;
-ws-icon-1 = II;
-ws-icon-2 = III;
-ws-icon-3 = IV;
-ws-icon-4 = V;
-
-;# ws-icon-default = 
-
+ws-icon-0 = I;%{F#0cb000}
+ws-icon-1 = II;%{F#e87902}
+ws-icon-2 = III;%{F#003bed}
+ws-icon-3 = IV;%{F#a800c9}
+ws-icon-4 = V;%{F#c2f0fc}    
+ws-icon-5 = VI;%{F#88e1f2}   
+ws-icon-6 = VII;%{F#e87902}         
+;ws-icon-6 = VII;%{F#e36387} 
+                                                                 
 ;;;; cpu module ;;;;
-
 [module/cpu]
 type = internal/cpu
 interval = 2

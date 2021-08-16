@@ -1,0 +1,23 @@
+sw_volume: 55
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: stop
+current: 7
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:rcs/AJR - Weak (Official Video).mp3
+1:rcs/Christina_Perri_-_A_Thousand_Years_CeeNaija.com_.mp3
+2:rcs/08 Robbery - (SongsLover.com).mp3
+3:rcs/Soarin.mp3
+4:rcs/03 Hardest To Love - (SongsLover.com).mp3
+5:rcs/01. Mercy - (SongsLover.com).mp3
+6:rcs/01 Alone Again - (SongsLover.com).mp3
+7:ncs/[ 1 hour ] Wontolla, Kasger & Limitless - Miles Away [NCS Release]-3h9AOQLI7yA.mp3
+8:rcs/The Weeknd Greatest Hits Full Album 2021 - The Weeknd Best Songs Playlist 2021.mp3
+playlist_end
